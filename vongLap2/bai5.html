@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let P =0;
+    let a= +prompt("nhập số tiền vay ban đầu:");
+    let b= +prompt ("số tháng vay:");
+    for (let i=1; i<=b; i++){
+        P= a*(1+0.0012*i)^b;
+        document.write("tổng số tiền là " +P + ' trong tháng thứ: ' + i +'</br>')
+    }
+</script>
+</body>
+</html>

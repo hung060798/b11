@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="button" value ="choi" onclick="play()">
+<script>
+  function play() {
+    let a =+prompt("nhap khoang tu a=");
+    let b =+prompt('den b:');
+    let c = +prompt('nhap so ban doan');
+    let x = Math.floor(Math.random() * (b - a) + a);
+        if (c == x) {
+            alert('dung');
+        } else {
+            alert('sai')
+        };
+  }
+</script>
 </body>
 </html>

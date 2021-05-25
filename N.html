@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let number = parseInt(prompt('nhập số '));
+  let count = 0;
+  let N=2;
+  let arr =[]
+  while (count < number) {
+      var check=false;
+      for (let i=2; i<=N-1; i++) {
+          if (N %i == 0) {
+              check=true;
+              break;
+          }
+
+          }
+      if (check == false ){ count++
+          arr.push(N)}
+      N++
+  }
+  document.write(arr)
+</script>
 </body>
 </html>
